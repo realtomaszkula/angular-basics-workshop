@@ -19,6 +19,7 @@ import { map, share, startWith } from 'rxjs/operators';
         <mat-nav-list>
           <a mat-list-item routerLink="/counter">Counter</a>
           <a mat-list-item routerLink="/background-color">Background Color</a>
+          <a mat-list-item routerLink="/filter-list">Filter List</a>
           <a mat-list-item routerLink="/card">Card</a>
           <a mat-list-item routerLink="/timer">Timer</a>
           <a mat-list-item routerLink="/comments">Comments</a>

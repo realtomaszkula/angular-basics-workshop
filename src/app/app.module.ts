@@ -14,6 +14,7 @@ import { CardModule } from './card/card.module';
 import { CommentsModule } from './comments/comments.module';
 import { CounterModule } from './counter/counter.module';
 import { FibonacciModule } from './fibonacci/fibonacci.module';
+import { FilterListModule } from './filter-list/filter-list.module';
 import { LayoutComponent } from './layout/layout.component';
 import { TimerModule } from './timer/timer.module';
 
@@ -34,7 +35,8 @@ import { TimerModule } from './timer/timer.module';
     CardModule,
     TimerModule,
     CommentsModule,
-    FibonacciModule
+    FibonacciModule,
+    FilterListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
