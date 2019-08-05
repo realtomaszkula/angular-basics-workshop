@@ -27,7 +27,7 @@ import { Component } from '@angular/core';
         display: block;
         padding: 16px;
       }
-      
+
       .grid {
         display: grid;
         grid-gap: 16px;

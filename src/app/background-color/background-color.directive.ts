@@ -10,7 +10,7 @@ import { Directive, HostBinding, HostListener, Input } from '@angular/core';
   selector: '[appBackgroundColor]'
 })
 export class BackgroundColorDirective {
-  @Input('appBackgroundColor') color: string;
+  @Input('appBackgroundColor') color = '';
 
   @HostBinding('style.backgroundColor')
   get backgroundColor() {

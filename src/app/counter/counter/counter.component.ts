@@ -1,5 +1,14 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
+/*
+  In this lesson we will learn about:
+  - @Component(),
+  - @Input(),
+  - @Output(),
+  - interpolation,
+  - event listeners
+*/
+
 @Component({
   selector: 'app-counter',
   template: `
