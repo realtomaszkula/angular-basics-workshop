@@ -13,6 +13,7 @@ import { BackgroundColorModule } from './background-color/background-color.modul
 import { CardModule } from './card/card.module';
 import { CommentsModule } from './comments/comments.module';
 import { CounterModule } from './counter/counter.module';
+import { FibonacciModule } from './fibonacci/fibonacci.module';
 import { LayoutComponent } from './layout/layout.component';
 import { TimerModule } from './timer/timer.module';
 
@@ -32,7 +33,8 @@ import { TimerModule } from './timer/timer.module';
     BackgroundColorModule,
     CardModule,
     TimerModule,
-    CommentsModule
+    CommentsModule,
+    FibonacciModule
   ],
   providers: [],
   bootstrap: [AppComponent]

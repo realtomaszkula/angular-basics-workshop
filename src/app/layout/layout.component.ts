@@ -22,6 +22,7 @@ import { map, share, startWith } from 'rxjs/operators';
           <a mat-list-item routerLink="/card">Card</a>
           <a mat-list-item routerLink="/timer">Timer</a>
           <a mat-list-item routerLink="/comments">Comments</a>
+          <a mat-list-item routerLink="/fibonacci">Fibonacci</a>
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content>
