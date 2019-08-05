@@ -1,4 +1,10 @@
-import { Component, EventEmitter, OnDestroy, OnInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  OnDestroy,
+  OnInit,
+  Output
+} from '@angular/core';
 
 /*
   In this lesson we will learn about:
@@ -11,11 +17,21 @@ import { Component, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 @Component({
   selector: 'app-timer',
   template: `
-    {{ date | date: 'short' }}
+    {{ date | date: 'mediumTime' }}
   `,
+  styles: [
+    `
+      :host {
+        display: block;
+        padding: 16px;
+      }
+    `
+  ]
 })
 export class TimerComponent implements OnInit, OnDestroy {
   date = new Date();
+
+  @Output()
   dateChange = new EventEmitter<Date>();
 
   private id = 0;
