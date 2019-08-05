@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-fibonacci-page',
   template: `
+    <h1>Fibonacci Sequence with ngOnChanges()</h1>
     <button (click)="toggle()">Change View</button>
-    <input type="number" [(ngModel)]="n" />
+    <input placeholder="Sequence length" type="number" [(ngModel)]="n" />
     <app-fibonacci-sequence [view]="view" [n]="n"></app-fibonacci-sequence>
   `,
   styles: [

@@ -8,8 +8,8 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 @Component({
   selector: 'app-fibonacci-sequence',
   template: `
-    <div *ngIf="view === 'sum'">{{ sum }}</div>
-    <div *ngIf="view === 'sequence'">{{ seq }}</div>
+    <div *ngIf="view === 'sum'">Sequence sum: {{ sum }}</div>
+    <div *ngIf="view === 'sequence'">Sequence numbers: {{ seq }}</div>
   `,
   styles: [
     `

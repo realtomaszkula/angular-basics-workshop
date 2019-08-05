@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-counter-page',
   template: `
-    <h1>Counter</h1>
+    <h1>Counter @Component() with @Input() and @Output()</h1>
     <app-counter [count]="count" (counterChange)="count = $event"></app-counter>
   `,
   styles: [

@@ -4,6 +4,8 @@ import { Person } from '../person-name.pipe';
 @Component({
   selector: 'app-person-name-page',
   template: `
+    <h1>Person Name @Pipe()</h1>
+
     <h2>Short</h2>
     <p>{{ person | personName: 'short' }}</p>
 
@@ -15,7 +17,6 @@ import { Person } from '../person-name.pipe';
 
     <h2>Dynamic</h2>
     <p>{{ person | personName: format }}</p>
-
     <input
       id="short"
       type="radio"

@@ -16,7 +16,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
     <span>{{ count }}</span>
     <button (click)="increment()">+</button>
   `,
-  styles: []
+  styles: [`span { margin: 0 4px;}`]
 })
 export class CounterComponent {
   @Input()

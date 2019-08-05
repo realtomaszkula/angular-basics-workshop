@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-comments-page',
   template: `
+    <h1>Comments with AfterViewInit() and @ViewChildren()</h1>
     <app-comments [comments]="comments"></app-comments>
   `,
   styles: [

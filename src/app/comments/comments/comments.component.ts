@@ -16,7 +16,6 @@ import {
   selector: 'app-comments',
   template: `
     <button (click)="scrollToLast()">Scroll to last</button>
-    <h1>Comments</h1>
     <ul>
       <li *ngFor="let c of comments" #comment>{{ c }}</li>
     </ul>

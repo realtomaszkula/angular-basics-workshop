@@ -8,6 +8,7 @@ import { FibonacciPageComponent } from './fibonacci/fibonacci-page/fibonacci-pag
 import { FilterListPageComponent } from './filter-list/filter-list-page/filter-list-page.component';
 import { TimerPageComponent } from './timer/timer-page/timer-page.component';
 import { PersonNamePageComponent } from './person-name/person-name-page/person-name-page.component';
+import { TablePageComponent } from './person-name/table-page/table-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'counter', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'comments', component: CommentsPageComponent },
   { path: 'fibonacci', component: FibonacciPageComponent },
   { path: 'person-name', component: PersonNamePageComponent},
+  { path: 'table', component: TablePageComponent},
 ];
 
 @NgModule({

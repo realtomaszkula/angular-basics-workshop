@@ -3,7 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-card-page',
   template: `
-    <h1>Basic Card</h1>
+    <h1>Cards with ng-content </h1>
+
+    <h2>Basic Card</h2>
     <app-card>
       <div class="header">
         Card header
@@ -16,7 +18,7 @@ import { Component } from '@angular/core';
       </div>
     </app-card>
 
-    <h1>Complex Card</h1>
+    <h2>Complex Card</h2>
     <app-card class="complex">
       <div class="header">
         <div class="avatar"></div>

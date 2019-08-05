@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-background-color-page',
   template: `
+    <h1>Background Color @Directive()</h1>
     <input [(ngModel)]="color" placeholder="Color" />
 
     <div class="grid">
