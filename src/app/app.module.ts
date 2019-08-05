@@ -11,9 +11,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackgroundColorModule } from './background-color/background-color.module';
 import { CardModule } from './card/card.module';
+import { CommentsModule } from './comments/comments.module';
 import { CounterModule } from './counter/counter.module';
 import { LayoutComponent } from './layout/layout.component';
-import { TimerModule } from './card/timer/timer.module';
+import { TimerModule } from './timer/timer.module';
 
 @NgModule({
   declarations: [AppComponent, LayoutComponent],
@@ -31,6 +32,7 @@ import { TimerModule } from './card/timer/timer.module';
     BackgroundColorModule,
     CardModule,
     TimerModule,
+    CommentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

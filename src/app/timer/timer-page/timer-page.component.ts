@@ -7,7 +7,14 @@ import { Component } from '@angular/core';
     <button (click)="show = !show">Toggle</button>
     <app-timer *ngIf="show"></app-timer>
   `,
-  styles: []
+  styles: [
+    `
+      :host {
+        display: block;
+        padding: 16px;
+      }
+    `
+  ]
 })
 export class TimerPageComponent {
   show = true;
