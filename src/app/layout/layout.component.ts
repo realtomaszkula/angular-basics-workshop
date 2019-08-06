@@ -1,7 +1,7 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map, share, startWith } from 'rxjs/operators';
+import { map, startWith } from 'rxjs/operators';
 
 @Component({
   selector: 'app-layout',
@@ -17,19 +17,42 @@ import { map, share, startWith } from 'rxjs/operators';
       >
         <mat-toolbar>Menu</mat-toolbar>
         <mat-nav-list>
-          <a mat-list-item routerLink="/counter">Counter</a>
-          <a mat-list-item routerLink="/iffy">Iffy</a>
-          <a mat-list-item routerLink="/table">Table</a>
-          <a mat-list-item routerLink="/math">Math</a>
-          <a mat-list-item routerLink="/filter-list">Filter List</a>
-          <a mat-list-item routerLink="/stylish">Stylish</a>
-          <a mat-list-item routerLink="/classy">Classy</a>
-          <a mat-list-item routerLink="/background-color">Background Color</a>
-          <a mat-list-item routerLink="/person-name">Person Name</a>
-          <a mat-list-item routerLink="/card">Card</a>
-          <a mat-list-item routerLink="/timer">Timer</a>
-          <a mat-list-item routerLink="/fibonacci">Fibonacci</a>
-          <a mat-list-item routerLink="/comments">Comments</a>
+          <a mat-list-item routerLink="/counter" routerLinkActive="active"
+            >Counter</a
+          >
+          <a mat-list-item routerLink="/iffy" routerLinkActive="active">Iffy</a>
+          <a mat-list-item routerLink="/table" routerLinkActive="active"
+            >Table</a
+          >
+          <a mat-list-item routerLink="/math" routerLinkActive="active">Math</a>
+          <a mat-list-item routerLink="/filter-list" routerLinkActive="active"
+            >Filter List</a
+          >
+          <a mat-list-item routerLink="/stylish" routerLinkActive="active"
+            >Stylish</a
+          >
+          <a mat-list-item routerLink="/classy" routerLinkActive="active"
+            >Classy</a
+          >
+          <a mat-list-item routerLink="/person-name" routerLinkActive="active"
+            >Person Name</a
+          >
+          <a
+            mat-list-item
+            routerLink="/background-color"
+            routerLinkActive="active"
+            >Background Color</a
+          >
+          <a mat-list-item routerLink="/card" routerLinkActive="active">Card</a>
+          <a mat-list-item routerLink="/timer" routerLinkActive="active"
+            >Timer</a
+          >
+          <a mat-list-item routerLink="/fibonacci" routerLinkActive="active"
+            >Fibonacci</a
+          >
+          <a mat-list-item routerLink="/comments" routerLinkActive="active"
+            >Comments</a
+          >
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content>
@@ -68,6 +91,10 @@ import { map, share, startWith } from 'rxjs/operators';
         top: 0;
         z-index: 1;
       }
+
+      .active {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
     `
   ]
 })
@@ -76,8 +103,7 @@ export class LayoutComponent {
     .observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
-      startWith(this.breakpointObserver.isMatched(Breakpoints.Handset)),
-      share()
+      startWith(this.breakpointObserver.isMatched(Breakpoints.Handset))
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
