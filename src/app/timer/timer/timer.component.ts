@@ -34,10 +34,10 @@ export class TimerComponent implements OnInit, OnDestroy {
   @Output()
   dateChange = new EventEmitter<Date>();
 
-  private id = 0;
+  private id: any = null;
 
   ngOnInit() {
-    setInterval(() => {
+    this.id = setInterval(() => {
       this.date = new Date();
       this.dateChange.emit(this.date);
     }, 1000);

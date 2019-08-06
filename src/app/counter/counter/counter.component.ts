@@ -7,16 +7,23 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   - @Output(),
   - interpolation,
   - event listeners
+  - property binding
 */
 
 @Component({
   selector: 'app-counter',
   template: `
-    <button (click)="decrement()">-</button>
+    <button (click)="decrement()" [disabled]="count === 0">-</button>
     <span>{{ count }}</span>
     <button (click)="increment()">+</button>
   `,
-  styles: [`span { margin: 0 4px;}`]
+  styles: [
+    `
+      span {
+        margin: 0 4px;
+      }
+    `
+  ]
 })
 export class CounterComponent {
   @Input()
