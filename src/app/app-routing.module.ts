@@ -6,9 +6,10 @@ import { CommentsPageComponent } from './comments/comments-page/comments-page.co
 import { CounterPageComponent } from './counter/counter-page/counter-page.component';
 import { FibonacciPageComponent } from './fibonacci/fibonacci-page/fibonacci-page.component';
 import { FilterListPageComponent } from './filter-list/filter-list-page/filter-list-page.component';
-import { TimerPageComponent } from './timer/timer-page/timer-page.component';
 import { PersonNamePageComponent } from './person-name/person-name-page/person-name-page.component';
 import { TablePageComponent } from './person-name/table-page/table-page.component';
+import { StylishPageComponent } from './stylish/stylish-page/stylish-page.component';
+import { TimerPageComponent } from './timer/timer-page/timer-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'counter', pathMatch: 'full' },
@@ -19,8 +20,9 @@ const routes: Routes = [
   { path: 'timer', component: TimerPageComponent },
   { path: 'comments', component: CommentsPageComponent },
   { path: 'fibonacci', component: FibonacciPageComponent },
-  { path: 'person-name', component: PersonNamePageComponent},
-  { path: 'table', component: TablePageComponent},
+  { path: 'person-name', component: PersonNamePageComponent },
+  { path: 'table', component: TablePageComponent },
+  { path: 'stylish', component: StylishPageComponent }
 ];
 
 @NgModule({

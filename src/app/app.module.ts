@@ -18,6 +18,7 @@ import { FilterListModule } from './filter-list/filter-list.module';
 import { LayoutComponent } from './layout/layout.component';
 import { PersonNameModule } from './person-name/person-name.module';
 import { TimerModule } from './timer/timer.module';
+import { StylishModule } from './stylish/stylish.module';
 
 @NgModule({
   declarations: [AppComponent, LayoutComponent],
@@ -38,7 +39,8 @@ import { TimerModule } from './timer/timer.module';
     CommentsModule,
     FibonacciModule,
     FilterListModule,
-    PersonNameModule
+    PersonNameModule,
+    StylishModule
   ],
   providers: [],
   bootstrap: [AppComponent]
