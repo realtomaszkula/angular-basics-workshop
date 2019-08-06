@@ -18,16 +18,17 @@ import { map, share, startWith } from 'rxjs/operators';
         <mat-toolbar>Menu</mat-toolbar>
         <mat-nav-list>
           <a mat-list-item routerLink="/counter">Counter</a>
-          <a mat-list-item routerLink="/filter-list">Filter List</a>
+          <a mat-list-item routerLink="/iffy">Iffy</a>
           <a mat-list-item routerLink="/table">Table</a>
+          <a mat-list-item routerLink="/filter-list">Filter List</a>
           <a mat-list-item routerLink="/stylish">Stylish</a>
           <a mat-list-item routerLink="/classy">Classy</a>
           <a mat-list-item routerLink="/background-color">Background Color</a>
           <a mat-list-item routerLink="/person-name">Person Name</a>
           <a mat-list-item routerLink="/card">Card</a>
           <a mat-list-item routerLink="/timer">Timer</a>
-          <a mat-list-item routerLink="/comments">Comments</a>
           <a mat-list-item routerLink="/fibonacci">Fibonacci</a>
+          <a mat-list-item routerLink="/comments">Comments</a>
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content>

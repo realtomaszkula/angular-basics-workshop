@@ -20,6 +20,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { PersonNameModule } from './person-name/person-name.module';
 import { StylishModule } from './stylish/stylish.module';
 import { TimerModule } from './timer/timer.module';
+import { IffyModule } from './iffy/iffy.module';
 
 @NgModule({
   declarations: [AppComponent, LayoutComponent],
@@ -42,7 +43,8 @@ import { TimerModule } from './timer/timer.module';
     FilterListModule,
     PersonNameModule,
     StylishModule,
-    ClassyModule
+    ClassyModule,
+    IffyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
