@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BackgroundColorPageComponent } from './background-color/background-color-page/background-color-page.component';
 import { CardPageComponent } from './card/card-page/card-page.component';
+import { ClassyPageComponent } from './classy/classy-page/classy-page.component';
 import { CommentsPageComponent } from './comments/comments-page/comments-page.component';
 import { CounterPageComponent } from './counter/counter-page/counter-page.component';
 import { FibonacciPageComponent } from './fibonacci/fibonacci-page/fibonacci-page.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'fibonacci', component: FibonacciPageComponent },
   { path: 'person-name', component: PersonNamePageComponent },
   { path: 'table', component: TablePageComponent },
-  { path: 'stylish', component: StylishPageComponent }
+  { path: 'stylish', component: StylishPageComponent },
+  { path: 'classy', component: ClassyPageComponent }
 ];
 
 @NgModule({

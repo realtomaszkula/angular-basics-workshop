@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-stylish-page',
+  selector: 'app-classy-page',
   template: `
-    <h1>Stylish Box with [ngStyle] and [style]</h1>
-    <app-stylish></app-stylish>
+    <h1>Classy Box with [ngClass] and [class]</h1>
+    <app-classy></app-classy>
   `,
   styles: [
     `
@@ -15,4 +15,4 @@ import { Component } from '@angular/core';
     `
   ]
 })
-export class StylishPageComponent {}
+export class ClassyPageComponent {}

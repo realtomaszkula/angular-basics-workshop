@@ -21,6 +21,7 @@ import { map, share, startWith } from 'rxjs/operators';
           <a mat-list-item routerLink="/filter-list">Filter List</a>
           <a mat-list-item routerLink="/table">Table</a>
           <a mat-list-item routerLink="/stylish">Stylish</a>
+          <a mat-list-item routerLink="/classy">Classy</a>
           <a mat-list-item routerLink="/background-color">Background Color</a>
           <a mat-list-item routerLink="/person-name">Person Name</a>
           <a mat-list-item routerLink="/card">Card</a>

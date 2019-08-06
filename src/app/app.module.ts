@@ -11,14 +11,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackgroundColorModule } from './background-color/background-color.module';
 import { CardModule } from './card/card.module';
+import { ClassyModule } from './classy/classy.module';
 import { CommentsModule } from './comments/comments.module';
 import { CounterModule } from './counter/counter.module';
 import { FibonacciModule } from './fibonacci/fibonacci.module';
 import { FilterListModule } from './filter-list/filter-list.module';
 import { LayoutComponent } from './layout/layout.component';
 import { PersonNameModule } from './person-name/person-name.module';
-import { TimerModule } from './timer/timer.module';
 import { StylishModule } from './stylish/stylish.module';
+import { TimerModule } from './timer/timer.module';
 
 @NgModule({
   declarations: [AppComponent, LayoutComponent],
@@ -40,7 +41,8 @@ import { StylishModule } from './stylish/stylish.module';
     FibonacciModule,
     FilterListModule,
     PersonNameModule,
-    StylishModule
+    StylishModule,
+    ClassyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
