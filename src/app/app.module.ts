@@ -21,6 +21,7 @@ import { PersonNameModule } from './person-name/person-name.module';
 import { StylishModule } from './stylish/stylish.module';
 import { TimerModule } from './timer/timer.module';
 import { IffyModule } from './iffy/iffy.module';
+import { MathModule } from './math/math.module';
 
 @NgModule({
   declarations: [AppComponent, LayoutComponent],
@@ -44,7 +45,8 @@ import { IffyModule } from './iffy/iffy.module';
     PersonNameModule,
     StylishModule,
     ClassyModule,
-    IffyModule
+    IffyModule,
+    MathModule
   ],
   providers: [],
   bootstrap: [AppComponent]

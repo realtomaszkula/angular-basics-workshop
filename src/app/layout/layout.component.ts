@@ -20,6 +20,7 @@ import { map, share, startWith } from 'rxjs/operators';
           <a mat-list-item routerLink="/counter">Counter</a>
           <a mat-list-item routerLink="/iffy">Iffy</a>
           <a mat-list-item routerLink="/table">Table</a>
+          <a mat-list-item routerLink="/math">Math</a>
           <a mat-list-item routerLink="/filter-list">Filter List</a>
           <a mat-list-item routerLink="/stylish">Stylish</a>
           <a mat-list-item routerLink="/classy">Classy</a>
